@@ -6,7 +6,8 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-responder = "*"
+pyyaml = ">=4.2b1"
+responder = "==1.2.0"
 
 [requires]
 python_version = "3.7"
