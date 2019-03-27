@@ -1,4 +1,8 @@
-const base_url = "http://movie_service.talkpython.fm/api/"
+const base_url = "http://localhost:7007/api/"
+
+// You can also use this URL instead if you just want to play
+// with this vue app and talk to our public version of this service.
+// const base_url = "http://movie_service.talkpython.fm/api/"
 
 // noinspection ES6ModulesDependencies
 app = new Vue({
