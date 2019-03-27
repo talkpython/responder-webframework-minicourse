@@ -1,0 +1,24 @@
+This app uses piplock files and pipenv to install responder. That seems to work much better than direct pip installs.
+To run this app, just:
+
+1. Create and activate a virtual environment:
+
+    $ python3 -m venv venv
+
+    # macOS / Linx
+    $ . venv/bin/activate
+
+    # Windows
+    C:\> venv\scripts\activate.bat
+
+2. Install pipenv
+
+    $ pip install pipenv
+
+3. Install the dependencies
+
+    $ pipenv install
+
+4. Run the app:
+
+    $ python app.py
