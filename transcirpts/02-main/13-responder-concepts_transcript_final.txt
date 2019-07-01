@@ -1,0 +1,54 @@
+00:00 Let's close down our chapter on Responder
+00:02 by quickly looking at some of the core concepts.
+00:04 Incredibly, what you see on the screen here
+00:06 is a complete Responder application
+00:09 assuming that you don't count that index file
+00:11 that's just the static HTML or dynamic HTML.
+00:14 So, what are we going to do to get started
+00:16 with a templated HTML page-based view?
+00:19 Come in here and create an API from responder.api
+00:22 similar to Flask's app.
+00:24 We're going to add a route as a decorator
+00:26 through api.route and we saw
+00:28 that you can even use curly braces like f-string
+00:31 like syntax to define places where data
+00:34 is passed in the URL.
+00:36 Then we're going to use api.template
+00:37 and pass the relative file name
+00:40 of the template we want to use.
+00:41 It assumes that you're talking about the
+00:43 template's folder, so within there
+00:45 it's the home directory in the index.html file.
+00:47 We're also here passing a user key
+00:50 which has the value u.
+00:52 It didn't really say where u comes from
+00:53 but, you know, you get it from somewhere, right?
+00:55 And you're passing along values like this that can
+00:57 be used inside that Jinja2 template.
+01:00 And then, what we do is we just set
+01:01 the content of the response.
+01:03 It's a mutable object, so we don't return values
+01:05 we just change response.
+01:07 Gives us a bare one, we set some values in it
+01:09 uses that result to generate the page.
+01:11 That was for a page backed by a template.
+01:14 What if we want a JSON-based API view?
+01:17 Well it's pretty similar.
+01:18 We're going to have the route again
+01:19 and see we're passing the keyword this time.
+01:22 And that key word appears in the search methods signature.
+01:25 Then, we're just going to create a JSON serializable thing.
+01:29 The simplest is probably a dictionary
+01:31 or list of dictionaries, things like that.
+01:32 And we're going to set the media element right there.
+01:35 And by setting media, we're telling it
+01:37 here is a JSON object.
+01:39 I want you to serialize and send back as
+01:41 part of this API response with the content type being JSON.
+01:45 That's it, that's Responder!
+01:46 Remember, all the key features I told you
+01:49 about at the beginning, that are not shown or covered here.
+01:52 Web sockets, async capabilities, background tasks.
+01:56 All that kind of stuff is in there
+01:57 but we don't have time to cover it.
+01:58 You can go explore it yourself, it looks really cool.

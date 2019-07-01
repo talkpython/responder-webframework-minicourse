@@ -1,0 +1,69 @@
+00:00 Think back to when you were younger, much younger.
+00:02 And you were playing with Legos or something like this.
+00:05 These look like so much fun, right?
+00:07 And see, there's a little dragon head there in the middle
+00:09 and there's a bunch of blocks
+00:10 and maybe somethin' from a spaceship, who knows?
+00:13 Well, this looks like fun.
+00:15 But it's a lot more fun to actually follow along
+00:18 and build something.
+00:20 So this course is built for you to follow along in two ways.
+00:23 So I want to highlight those right at the beginning.
+00:25 In case you want to follow along, you can.
+00:27 You don't have to, all right?
+00:29 If you just want to watch and let it wash over you
+00:32 that's great, you can totally do that.
+00:33 But if you want to follow along
+00:34 there's two things you can do.
+00:36 First, when we work our way
+00:38 through all the demos and stuff
+00:39 you could pause the videos and just go and recreate that.
+00:43 You might need to grab the data that we're using
+00:45 off of the GitHub repository.
+00:47 But after that, you should be able to follow along
+00:48 and create it yourself.
+00:49 So one, step one, round one, version one
+00:52 of this would be to follow along.
+00:55 The second is this thing I'm calling "Your Turn."
+00:58 So if you GitHub repo, actually to this folder here
+01:01 linked at the bottom, you'll see
+01:03 we put together a separate independent project
+01:06 that was not presented in this video
+01:08 for you to also follow along.
+01:11 So here we are in this responder webframe
+01:15 marked "Minicourse", Github repository.
+01:17 And here's your turn I was talking about.
+01:19 So if we go in here you can see, there's a couple of steps.
+01:22 It's not like, do X, type Y, and so on.
+01:25 It's more like, here's some ideas of how you can explore
+01:28 to build something with Responder.
+01:31 We're going to use this Mockaroo service
+01:33 go over here you can see if I log in.
+01:36 Mockaroo will let us generate things like
+01:38 ID, first name, email.
+01:39 And I can even preview it and it'll show me
+01:42 some pretty cool data there, actually.
+01:43 But you can go further and click here and say
+01:45 "I would like a animal scientific name,"
+01:48 or, "Bitcoin address."
+01:50 You see, there's all sorts of stuff here.
+01:53 So the idea is, you go to this Mockaroo service.
+01:56 You look through that data source
+01:58 of sets of data sources you can generate, and go
+02:00 "Oh, I have an idea for a veterinary clinic,"
+02:02 "or a Bitcoin company," or whatever, right?
+02:06 Look through and find something interesting
+02:07 and generate a bunch of data.
+02:09 You can save it as JSON, here's a way to load it back up
+02:11 as JSON into Python dictionaries that you can use.
+02:14 And then here's a simple example of
+02:16 building out some sort of API endpoint.
+02:19 And you'll have seen this, you'll see how this goes.
+02:23 So here, just a reminder on how that works.
+02:25 And you always look back at the demo code.
+02:27 And I encourage you, after you've seen the short course
+02:29 after you've followed along, to go explore Mockaroo.
+02:32 Build an interesting fake data set and then
+02:34 build an interesting fake service to work with that.
+02:38 All right, well hopefully this adds a fun twist
+02:40 at the end of the course for you.

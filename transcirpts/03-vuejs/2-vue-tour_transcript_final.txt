@@ -1,0 +1,86 @@
+00:00 Now, keeping with our theme
+00:01 of a high speed fast mini course
+00:03 this is not a deep dive on Vue JS.
+00:06 But, like I said, I did want to provide this app
+00:08 for you to play with, and so let me
+00:10 just give you a quick tour
+00:11 so it makes a little bit of sense.
+00:13 You can see down here we have our movie service running.
+00:16 I'm going to put that away, so we have room
+00:17 but it's going to be running down there the whole time.
+00:20 Now, let's open up this Movie Explorer
+00:22 and notice it has a views, as in HTML
+00:25 it has JS and it has CSS.
+00:27 CSS, we don't care too much about
+00:29 but let's look over here at the index.
+00:32 Actually, let's start with the site.
+00:34 So, here, you can see it's using the localhost API
+00:36 you can also use the public API
+00:39 that won't be a Responder that's Pyramid
+00:40 but it doesn't really matter
+00:41 if you just want to play with Vue
+00:43 you can use that without running the little app here.
+00:46 But this will let you work with the API
+00:47 that we are building right there.
+00:49 So what we do is we go and create a new Vue object
+00:52 we tell it where it's going to run
+00:53 we pass the data binding elements
+00:55 like the movies and the genres
+00:57 we give it methods like search
+00:59 and it's called a lot of movies, if we go down to movies.
+01:04 You see this going against our URL here
+01:05 using a cool library called Axios.
+01:07 All that stuff's included, I've committed all the stuff
+01:10 under node modules so you don't have to
+01:11 like, MPM initialize it or install the local stuff
+01:15 all right, you just check it out and run it.
+01:17 So, anyway, this stuff here, is going to be bound
+01:20 over on this end, because we're saying, "Here's an ID."
+01:26 And here's like a search input
+01:27 and we're model binding the search text
+01:30 and if you hit enter it calls that search function.
+01:32 And then here, we're looping over all the genres
+01:36 we're looping over all the movie results
+01:37 and putting them here.
+01:39 So now that we have our movie service here
+01:42 running in PyCharm, I just minimize that.
+01:45 Let's go over and run our Movie Explorer.
+01:48 You can actually run that from PyCharm
+01:50 or we can just run it from the file system
+01:52 and I find that's a little simpler, so let's just do that.
+01:54 Go over here to our index.html and, quote, "Run it,"
+01:57 and we'll just open the HTML, it pulls in the JavaScript
+02:00 it's going to do its magic.
+02:01 So here you you can see that it's hitting our API
+02:04 and I can show you that that is happening, right here
+02:07 you can see it's doing some get request
+02:09 of the API input there.
+02:11 And we can do all sorts of cool stuff
+02:13 so I can see the top 10 movies, I can select a movie
+02:15 by genre, so let's go see the documentaries
+02:18 "Butteryfly Girl," and whatnot
+02:19 we can say show me the sports, then click on that.
+02:22 Or you can show me the the drama, a very popular one.
+02:25 Or you could even search for stuff
+02:27 that's just, you know, fun to watch.
+02:29 "Funny People," "Fun with Dick and Jane."
+02:31 Apparently those are all in the comedy.
+02:34 Okay, so this is the application
+02:36 and if you look at the network, we go to just XHR
+02:39 that's Ajax, basically.
+02:43 You can see all those requests going back
+02:44 to our API input, here, so localhost, API, search test.
+02:50 Test two.
+02:51 If we go and click the top 10, there's the movie top 10.
+02:55 Movies by genre, here we go, API movie genre, adventure.
+03:00 So we're not going to go into lots of detail about Vue JS
+03:03 that's also covered in the Hundred Days of Web course
+03:05 in great detail, but not here
+03:08 because this is really not about Vue JS.
+03:10 Nonetheless, hopefully, having this here to work with
+03:15 comparing how you might call the service and define it
+03:18 and then how you might interact with it
+03:20 from a rich frontend framework, like Vue JS.
+03:22 Hopefully that's interesting and adds some value for you.
+03:25 Either way, all this code is in the get it repository
+03:27 and you can go an play with it, as you like.

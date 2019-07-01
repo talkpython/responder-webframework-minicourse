@@ -1,0 +1,19 @@
+00:00 That's it!
+00:01 You've done it, you have crossed the finish line.
+00:03 In fact, we've only scratched the surface
+00:06 of what Responder can do.
+00:08 Go check out some of the other tutorials
+00:09 that they have on their site.
+00:11 Dig into the Background Worker stuff
+00:13 dig into the WebSockets.
+00:15 There's all kinds of cool things
+00:16 that you can do that are way more advanced
+00:18 than what we've had a chance to dig into
+00:19 in this short course.
+00:21 Before you do that, take a moment, get up
+00:24 put your arms up in a V, and say
+00:26 "Yes, I've made it!
+00:27 "I've gone through this whole framework
+00:28 "and now I know something cool
+00:30 "that maybe I didn't at the beginning of today."
+00:34 That's it, you're done, congratulations.

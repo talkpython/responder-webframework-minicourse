@@ -1,0 +1,18 @@
+00:00 When you first look at Responder, you might think
+00:02 of it as an entirely new, from scratch, API.
+00:05 But the reality is, is it's more of a reinterpretation
+00:09 of existing frameworks.
+00:10 So, for example, two of the main building blocks
+00:13 of Responder are Starlette and API Star.
+00:16 We've talked about API Star already.
+00:19 It's a cool way to build APIs of course from Tom Christie
+00:22 also of Django Rest Framework fame.
+00:25 And then Starlette is an ASGI framework
+00:28 that really works well.
+00:29 So you'll see a lot of the features
+00:31 of Responder are really coming from, especially Starlette.
+00:36 These two things are foundational elements
+00:38 for working with Responder and that's kind of cool
+00:41 because that means it's not entirely new
+00:43 and from scratch, but it kind of builds on the work
+00:46 and the growth of these other frameworks.

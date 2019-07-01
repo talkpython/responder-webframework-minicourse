@@ -1,0 +1,43 @@
+00:00 Our template file is working
+00:01 but the static files are not there.
+00:03 Well, that's not surprising because we haven't created any.
+00:06 There's a couple things we have to do.
+00:07 Notice already it's adding this static folder
+00:10 that's just by running it creates the templates
+00:12 in the static folder.
+00:13 So we're going to copy some stuff over
+00:15 copy some CSS and so on
+00:17 and you'll see that those are actually being imported
+00:19 right here at the top right there.
+00:21 So, I just got to make sure those are available.
+00:23 Now if we run this again click here, hey look at that.
+00:27 It looks a lot better. Our formatting is here
+00:30 and of course we still have this view
+00:32 which you can look at it like this
+00:33 go over to the network, go to requests
+00:35 you can see now we're getting good stuff
+00:38 for our static resources.
+00:40 Let's go see just CSS, there they are.
+00:42 304 even they're cached, which is great.
+00:45 For this we don't have to do anything.
+00:47 The static folder is already mapped with caching
+00:50 but if for some reason you wanted to control
+00:53 it I could go over here and say api.static_route
+00:56 then I could say /static
+00:57 and potentially add additional details
+00:59 so if you wanted to have another static folder, other things
+01:02 and then come over here and say static=true.
+01:06 Okay so you can add additional routes.
+01:08 I'll comment it out so you have it
+01:09 but it already creates one static folder
+01:12 for you to get started with.
+01:13 It also does this templates thing
+01:15 which I've mapped as a template folder
+01:17 that's why it's purple here in PyCharm.
+01:19 Okay it looks like this thing is up and running.
+01:22 We got our web view working great.
+01:24 How 'about this when we try to search
+01:25 not found, not working so well, huh?
+01:28 All right well that's something we still got to build
+01:30 but we do have our static files working
+01:32 and we have our template working right here.

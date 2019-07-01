@@ -1,0 +1,94 @@
+00:00 Let's implement search by keyword here.
+00:02 We saw that it's pretty easy if we have our database.
+00:05 We just got to make sure everything is
+00:06 a dictionary, and off it goes.
+00:07 One other item I want to be careful about here
+00:10 is I want to make sure we don't have too many responses.
+00:13 Right? If you search for the letter A
+00:15 you might get basically the database back.
+00:17 So up here I want to set some kind of max response count
+00:20 like to 10 or something along those lines.
+00:23 So a little bit of a complicating detail
+00:25 but at the same time you don't want to
+00:26 dump your database back if they search for nothing
+00:29 or space or, you know, some weird thing like that.
+00:32 Alright, so let's say we're going to get our movies
+00:33 and again we're going to go back to our database
+00:35 and say search by keyword this time.
+00:38 And the keyword is already coming in.
+00:40 That's cool, right?
+00:41 So right away we get a list of movies back
+00:43 from the database, and then we'll say limited.
+00:47 We want to know and report to the user
+00:48 whether or not there's more responses.
+00:51 So we'll say is the len of movies greater
+00:53 than the max response count there.
+00:56 I'll say, if it is limited
+00:58 like there's too many movies here
+00:59 what we're going to do is we're going to trim it down.
+01:01 So we'll set the movies to just the first 10 using slicing.
+01:06 Remember, this is just in memory.
+01:07 It's kind of silly, but it works.
+01:09 Now, what happens if we try to return a movie?
+01:11 Well, we already saw down here is goes
+01:13 this is not JSON serializable. It's not going to work.
+01:16 So we have to do a little bit of magice right here.
+01:19 We'll say movie dicts, because this is the list
+01:22 but the things in the list are not serializable.
+01:24 So we're going to go and create a new list where the items in
+01:27 the list are, so we'll say db.movie_to_dict(m)
+01:31 for m in movies, and now here we're going to just return
+01:35 our movie dict along with a few other things.
+01:38 So we want to say what the keyword was, we'll say hits
+01:41 that's what it says in the other api so it's going to say here
+01:43 it's going to be movie dict and then truncated results is
+01:49 going to be indicated by whether it was limited yes or no.
+01:52 Alright so here's our search and we can even do a print
+01:55 statement searching, we'll do a print, get the results out
+02:00 scale one more time, click over here on search.
+02:02 Hmm, look at that!
+02:04 Our search for run returned The Rundown, The Runaway Bride
+02:08 Run All Night, Chicken Run, all sorts of stuff.
+02:11 Cool, so what if we search for Superman.
+02:15 Boom, Batman versus Superman, Superman Returns, just straight
+02:18 up Superman, Superman 2
+02:20 Yeah, so it's working really well, it's pretty straight forward right.
+02:23 We're going to do something super super similar with the other one.
+02:26 So I'm just going to copy this down here, and I'm going to use
+02:30 director name and, instead of searching by keyword
+02:33 we'll search by director.
+02:34 A little database thing, knows all about that.
+02:36 So director will pass along the director name and
+02:40 the keyword is going to be director name.
+02:44 Alright, let's run it again.
+02:45 This time if we click, lets clean this up a little.
+02:47 If we click right here on director, it shows us just
+02:51 Cameron, Avatar, Titanic and so on.
+02:54 If we search for someone else like Berg, Peter Berg.
+02:59 We get Battleship, Indiana Jones all these. Great right.
+03:03 Hancock, so we can search by whatever we want
+03:06 Cameron, here we go.
+03:07 So I think that's it, we have them all implemented
+03:10 lets just double check, keyword, seems like that works.
+03:13 Director, seems like that works.
+03:15 And IMDB code where we get one back, well that one's been
+03:18 working for a while.
+03:19 It was pretty quick right and look, this entire thing is
+03:22 implemented in PEP 8 style, 58 lines plus the static HTML
+03:27 and CSS, and I guess maybe the db as well.
+03:31 But the API side of thing is really really quite simple
+03:34 one thing you might want to do, like in PyCharm saying
+03:37 this is not used in python, a way to say, I have to pass
+03:41 a thing here but I don't want to use it, is put an _
+03:45 So that might make you feel better if you want
+03:46 to put underscores, but then you also maybe don't remember
+03:49 what that's for.
+03:50 So it's up to you, but I wouldn't put those there so it
+03:52 doesn't look like they're errors.
+03:53 Here we go, so it's totally working.
+03:55 Is it totally beautiful?
+03:57 No, I hate having all this stuff crammed in this one file
+04:00 but these Flask like api's, because they allocate this thing
+04:04 and use it in, sort of nudge people down that path.
+04:07 We're going to clean this up but I think this is working
+04:09 really really well.

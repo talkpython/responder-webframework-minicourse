@@ -1,0 +1,113 @@
+00:00 The last thing we want to do
+00:01 is just reorganize this.
+00:02 Now, if this was the entire application
+00:05 I'd be fine to leave it the way it is.
+00:06 But I know how real web apps are.
+00:08 They have hundreds or maybe thousands
+00:10 of these view methods, and templates
+00:12 and all sorts of things.
+00:14 So you want to reorganize it and set yourself up
+00:16 for growing into a bigger app than this
+00:19 if that's at all possible.
+00:20 So how are we going to do that?
+00:21 Well, the data thing is fine, the templates you can see
+00:23 I've already organized them in a way that's pretty good.
+00:26 Similarly, for the static files here.
+00:28 So those three are going to be fine.
+00:30 What we're going to focus on is just this file.
+00:32 Now the one thing we need to do is
+00:34 this thing, you can see it's used here, and here, and here
+00:38 and it's an instance.
+00:39 So it's a little silly, but what I'm going to do
+00:41 is I'm going to create just a file that basically has
+00:44 that one single line in here.
+00:46 So I'll come up with something like api_instance
+00:49 and we'll import responder, and I'll say
+00:51 API equals responder.api, like that.
+00:55 And that's it.
+00:56 So over here, we're not going to do this.
+00:58 Instead, we're going to say from api_instance import api
+01:03 and that puts us back.
+01:04 But what that means is other files can also import this
+01:07 and share that instance.
+01:09 If I put it here, and then this file has to import
+01:12 some other files, but those files need access
+01:14 to that instance, so they got to get back here first
+01:16 it gets really complicated.
+01:17 So this kind of breaks that circular dependency.
+01:20 The next thing i want to do is I want to have some views here.
+01:23 Let's have a whatchacallit, like a home view
+01:27 hence the name home right there.
+01:29 And, woops I didn't want that to be a directory.
+01:32 I want that to be a file.
+01:34 Have a home set of views, and I'm going to have API views.
+01:40 You could just call it API
+01:41 but it's kind of highly confusing
+01:43 that this is also called API, so let's call it api_views.
+01:46 So then we're just going to say well, this kind of stuff
+01:49 is what's going to go over in this part
+01:52 and we're going to have to say from api_instance import api
+01:56 and this one's done.
+01:58 Now, again pretty simple, but in a real app
+02:00 you have tons of these and they'll build up.
+02:02 So that'll be good to have that out of the way.
+02:04 And then here's our API methods, these three.
+02:08 Let's take those and put them here.
+02:11 And again we need the api, you can see the arrow there
+02:13 from api_instance import api.
+02:16 We're also going to need responder, and this thing
+02:18 really was only defined here for that purpose
+02:22 so I can put that up there.
+02:23 We also need our db, so it looks like
+02:26 we have that all up there, everything's cleaned up.
+02:27 Now if I try to run this, how well is this going to work?
+02:30 Well, we initialize our database and we call run.
+02:33 How's the responder going to know about these routes?
+02:35 Probably not very well, let's try.
+02:37 Yeah, not found. Didn't know so well.
+02:39 So what we need to do is basically let Python
+02:43 more importantly the decorator see these
+02:45 and the way you let that see it in Python
+02:46 is you just import it.
+02:47 So we'll say this, from views.home import *
+02:52 we'll use star which is normally discouraged
+02:54 but we'll use it because as we add new ones
+02:56 it's just going to get everything.
+02:58 And what else we want here?
+02:59 api_views. So we can go say, don't do this.
+03:03 Don't tell us these are not used
+03:04 because they are used. Alright, great.
+03:07 Now if I run it, it's not looking great.
+03:08 We still got one more thing to do, but it's getting there.
+03:11 Back to work.
+03:12 Woo hoo, everything's working again, see that?
+03:14 But now if we want to go and add something
+03:16 we know where we go.
+03:17 Here's more html template based views
+03:20 here's where we put some more API methods.
+03:22 Those are all separated from say, the app start up
+03:25 like creating the global_init, importing the views
+03:28 creating the app sort of over there and then calling run.
+03:31 So you might want to add a little bit of extra work here
+03:35 to make this, I don't know, look a little better.
+03:37 We can put his into a main, or something like that
+03:39 and then use our Python convention one more time.
+03:45 Here we go.
+03:46 Alright, so I'm going to call this much more cleaned up
+03:48 and ready for big boy web application
+03:50 that actually does a whole bunch of stuff
+03:52 doesn't just cram everything into that app.py file
+03:55 like so many of the Flask apps do.
+03:57 Alright, well that's Responder all put together for you.
+04:00 It's a pretty cool little web app.
+04:02 One of the important things we haven't spoken about
+04:04 is because it's an ASGI framework based on Starlette
+04:07 we could put async here and use say like
+04:11 await right here, if the database actually supported
+04:15 async behaviors. It doesn't.
+04:17 That's why I didn't talk very much about it.
+04:18 But one of the big advantages here
+04:20 which some of the others do have as well
+04:22 is that we can use async on our view methods
+04:24 which is pretty awesome.
+04:26 Alright, that's responder in a nutshell.

@@ -1,0 +1,40 @@
+00:00 Are you ready to write some code?
+00:01 And build an API, that movie search service with responder?
+00:04 Well, let's get started.
+00:05 We're going to over here in our GitHub repo
+00:07 create a folder called movie_svc
+00:10 and I'm going to go into the service and
+00:11 just create a virtual environment
+00:13 as we have been all along.
+00:15 So we'll run python3 -m venv venv
+00:19 and that'll create an virtual environment and activate it.
+00:22 Now the next thing to do is install Responder
+00:25 so we'll say pip install responder.
+00:29 There we go it's all installed
+00:31 and if we also install a little tool here called pipdeptree
+00:36 you can see how all this stuff fits together.
+00:37 You can just say pipdeptree
+00:40 and it shows you all of the moving pieces of Responder
+00:42 so you can see Responder is using aiofiles, API Star
+00:46 graphene, Jinja2, requests
+00:50 uvicorn for the async web server
+00:53 and then Starlette we already talked about.
+00:54 So here's all the pieces that we got working.
+00:57 Now let's open this up in PyCharm.
+01:02 And now we are going to get started
+01:03 by just having a Pyhton file
+01:05 and I'll call it app.py.
+01:07 You can actually call it whatever you want but that's fine.
+01:09 Okay, we make sure everything is working
+01:11 by just saying import responder
+01:14 and then we can go ahead and just run this.
+01:17 Okay loads up looks like everything is configured correctly.
+01:20 Now we got to get started with the API
+01:23 create some view methods and then run our server.
+01:26 Now before we do run that server though
+01:28 lets do one more thing
+01:29 lets create a requirements file here.
+01:34 And here we'll just put responder as well
+01:37 okay great so we got our requrements.txt
+01:39 and we got our starter code
+01:41 that we're going to build our app right here.

@@ -1,0 +1,60 @@
+00:00 Now before we talk about Vue.js properly
+00:02 at least to quickly introduce the application
+00:05 that I'm going to let you have to play with
+00:07 the API that we'll be building here
+00:08 let's just talk about some ways we can call our API.
+00:12 Now, in the beginning, we just clicked on it in PyCharm
+00:15 or opened a browser and typed in the address
+00:17 and we just went there.
+00:18 And that's kind of okay for get requests sometimes
+00:21 unless you need to modify the header
+00:23 but it's really hard to test post
+00:25 and other types of verbs that way
+00:26 so let me show you something better.
+00:28 Let's start by actually just getting our app
+00:30 to run again over here.
+00:31 So this is a fresh copy we're going to work with
+00:34 so let's go over here and go to that directory
+00:37 and we're going to create a virtual environment
+00:39 by running python3 -m venv venv.
+00:42 Activate it and upgrade pip
+00:44 'cause pip is always out of date
+00:45 for virtual environments, it seems like.
+00:47 So with that in place
+00:49 we can come over here and open this in PyCharm.
+00:54 All right, super. That's all loaded up.
+00:56 Let's go in here and let's mark this directory.
+01:01 That's a sources route
+01:02 and we don't really have to mess with that.
+01:03 That's just HTML and JavaScript, but I guess it won't hurt.
+01:08 And mark it as a resource route
+01:10 so it doesn't think things like ../jsfile
+01:13 or whatever are missing.
+01:15 Okay, so, also make sure that we have
+01:17 the right thing running.
+01:18 Yes, our virtual environment is there
+01:20 so let's go into MovieDb Service.
+01:25 Install our requirements, so this will run.
+01:29 Great, looks like that worked.
+01:31 Let's just go run our app.
+01:32 We might need to change the directory
+01:34 and wait for this to finish, this indexing.
+01:37 All right, let's go and run that, see how this works.
+01:39 Click on this. All right, beautiful.
+01:42 It looks like our service is up and running here.
+01:44 You've seen this from before.
+01:46 So if we click here, we can test our little run
+01:48 but let's try something besides just calling it a browser.
+01:51 Let's go open Postman.
+01:52 You can go and search for Postman in this app.
+01:55 It's really nice, it's free.
+01:57 Come over here and we can enter the URL
+02:00 and send it and here we get, you can see a nice output.
+02:03 We can, of course, tweak the body
+02:06 make this a POST or PUT or something like that.
+02:08 So if you want to explore and interact with the service
+02:11 and test it a little bit better than with your browser
+02:13 I recommend using Postman for that.
+02:16 Of course, it's not an app, it's not as much fun
+02:18 but it is a good way to explore your API
+02:20 as you're building it.

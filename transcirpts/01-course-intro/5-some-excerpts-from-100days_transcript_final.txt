@@ -1,0 +1,46 @@
+00:00 Now some of the content
+00:01 in fact the main demo where we build out this Responder API
+00:05 comes from this other course that we're working on
+00:08 and we have been working on for a long time
+00:10 called 100 days of Web in Python.
+00:13 Haven't heard of it?
+00:14 That's because this is the first time
+00:16 were publicly talking about it at all
+00:18 so workin' on this with Bob Belderbos
+00:20 and Julian Sequeira who helped
+00:22 with the 100 days of Python course
+00:24 100 days of Code in Python course
+00:25 that we already did, and this is another
+00:27 massive course covering all sorts of things
+00:29 in the web framework world.
+00:30 Vue JS, React, Flask, Django, Responder
+00:34 APIStar, you name it.
+00:36 If you want to dig into a bunch of different web frameworks
+00:39 and kind of get a survey of the entire landscape
+00:40 this is the course where we're doing that.
+00:43 It's going to be like 25 hours of content
+00:45 and it's going to be amazing.
+00:46 So in the next chapter when we build out this API
+00:49 some of that presentation is coming from
+00:51 a little excerpt from his 100 Days of Web course.
+00:55 Now, I didn't know anything about it
+00:57 or have any experience with this 100 Days of Web course
+01:00 but you'll see it in the demo links
+01:02 like in the fold or path.
+01:04 Things like that if you see that and
+01:06 you're like, wait, what is this 100 Days of Web about?
+01:08 Well, here's what it's about.
+01:09 So we took this little bit of Responder
+01:11 from the 100 Days of Web course
+01:12 and we turned it into its own proper course
+01:15 this little mini course that you can take right here.
+01:18 That's what it's about, check this out.
+01:19 It's not out yet at the time of the recording
+01:22 but maybe the time of watching.
+01:24 Anyway, if you subscribe to get notified
+01:26 somehow at training.talkpython.fm
+01:29 like you have an account and you haven't opted out
+01:31 for example, you'll definitely hear about this
+01:33 when it comes out.
+01:34 Heads up, this a little excerpt from a really big course
+01:37 that's been blown up to be its own proper course.

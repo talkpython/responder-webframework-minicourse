@@ -1,0 +1,79 @@
+00:00 Now, in order to actually implement these methods
+00:02 we need some data so I'm going to give you the data
+00:04 that actually powers that search
+00:06 that movie service that I showed you at the beginning
+00:09 so I'm going to just drop that in here, going to be a data folder
+00:12 and in the data folder we're going to have a movie.csv
+00:15 super-exciting, right
+00:16 and we're going to have this DB, database.py
+00:20 and it's going to return this named tuple
+00:22 which looks like that so it could be a class
+00:25 but we just got this simple thing
+00:26 that we're reading from that CSV
+00:29 so the main important thing here is that
+00:31 we need to call global_init.
+00:33 It's going to go find where the actual CSV file is.
+00:37 It's going to iterate over the rows
+00:39 and convert them into these movie objects
+00:42 and then put them into a lookup, by IMDb code
+00:45 so we can kind of index into our in-memory database here
+00:48 so we can ask it things like
+00:50 search for them by title and get a list back
+00:53 search by keyword and get a list back
+00:55 or just get an individual movie
+00:57 out of our little fake database here.
+00:59 Okay, so that's super-easy.
+01:01 We come over here, and we're going to say from data import db.
+01:06 Now this one, this one looks pretty easy.
+01:08 Actually, let's do the IMDb one.
+01:09 This one looks easiest, I think
+01:11 so we'll say movie equals db.find_by_imdb
+01:16 and we're going to give it IMDb number.
+01:19 If this is none or it doesn't exist
+01:20 we're just getting None back for the movie
+01:22 so we could do something like check
+01:24 whether or not the movie's there, return a 404.
+01:27 For now I'm just going to try to return the movie
+01:30 just the details of the movie.
+01:32 I don't think it's going to work
+01:33 but let's find out what happens.
+01:34 Oh, I think we forgot to call the global_init.
+01:36 This is probably going to fail, but let's try.
+01:39 Yep, it got us nothing back
+01:40 and it should have given us something.
+01:42 It didn't crash, it just said there's no data found
+01:44 and the reason is somewhere along the way
+01:47 maybe in the startup here, I'm not sure
+01:49 we need to call db.global_init once.
+01:51 Okay, try again, server error.
+01:53 Okay, remember I told you
+01:54 I didn't think this was going to work.
+01:55 What's wrong?
+01:56 This object is not JSON serializable
+01:59 so the important thing to note here
+02:02 is the entire object graph
+02:03 like if it's the list, everything the list contains
+02:06 and the items within that list point to, and so on
+02:08 have to be JSON serializable.
+02:10 This movie is a class.
+02:11 It's not, so we need some way to convert it
+02:15 to JSON. If we look over here
+02:17 actually wrote a method somewhere here at the top
+02:21 movie_to_dict, right, so it's going to create a dictionary
+02:24 and dictionaries
+02:25 long as their elements are serializable themselves, are
+02:29 so that'll be nice and easy
+02:30 so all we got to do is say db.movie_to_dict
+02:34 and then this should work
+02:35 because the important thing is that
+02:36 that's basically a Python dictionary
+02:39 or a list of dictionaries, or something along those lines.
+02:42 All right, ready? Boom, look at that.
+02:44 The Abyss by James Cameron. How cool is that?
+02:47 So, we've already implemented our method, our first method.
+02:50 We went to the database, found our movie
+02:53 converted our movie from a movie object into a dictionary
+02:57 set the response media.
+02:58 Boom, already knows that's JSON.
+03:00 Off it goes. How cool is that?
+03:02 This is pretty easy, right?

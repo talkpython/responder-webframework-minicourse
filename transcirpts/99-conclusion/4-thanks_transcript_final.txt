@@ -1,0 +1,12 @@
+00:00 Well, our time together is up, at least in this course.
+00:03 I want to say thank you for taking our Responder Mini Course.
+00:06 I hope you had a great time.
+00:07 I hope you learn something fun
+00:08 and I really appreciate you spending this time together.
+00:11 Go out there and build something really amazing
+00:14 with Responder or with Vue JS
+00:17 or with some other web framework.
+00:19 And also, do consider taking other courses
+00:22 at training.talkpython.fm.
+00:24 We have a bunch and we're always building more.
+00:26 All right, goodbye and thank you.

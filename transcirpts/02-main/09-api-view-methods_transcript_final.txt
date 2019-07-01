@@ -1,0 +1,70 @@
+00:00 The next thing to do is to define the API routes.
+00:03 Probably the easiest way is actually to go on and run this.
+00:06 And grab them off this little description page.
+00:07 We're going to do a GET to search for movies.
+00:10 Like this. Want to have that here.
+00:13 That's something we're going to do.
+00:14 And I'll put the others.
+00:15 So this time we need to define three additional routes.
+00:19 So, let's try it in the methods first.
+00:20 And let's just call this search_by_keyword.
+00:23 The name and the method is really just for us not for them.
+00:26 Request and response, that's what we're going to
+00:30 pass in and let's just do this for a moment.
+00:34 And search_by_director then movie_by_imdb.
+00:39 Great, so these are the things that we're going to build.
+00:42 Now we need, see what we want here.
+00:45 So, we want /api/search, and we want to
+00:47 grab some data out of the route and we want to pass
+00:50 it through. Well it turns out this is super nice.
+00:52 We say api.route and we give it as a string of this bit
+00:57 right here and then that actually gets converted
+00:59 to a string and passed automatically.
+01:01 So we just say that's a string right there.
+01:03 And that's it. That's easy, right?
+01:05 Now, how do we show or return some sort of json data?
+01:09 Well, it's going to be pretty easy.
+01:11 We'll say response and you're going to say the media
+01:13 is equal to a dictionary. So let's just say 'searching'.
+01:18 I'll just put the keyword here. So just have it echo it back.
+01:20 Notice there's no return value.
+01:21 This is mutable, these requests here or responses.
+01:26 And you just set values like headers and media and
+01:28 content and so on.
+01:29 So we should be able to call this already.
+01:30 Let's try. Go over and click this.
+01:32 Look at that. Searching for run.
+01:34 And if you actually view the raw data
+01:36 that's the json value that was turned back.
+01:38 Perfect! So this is pretty easy.
+01:40 Let's do the other two.
+01:42 The route for this one is going to be
+01:43 api/director/{director_name}. So @api.route.
+01:47 Put this into a string.
+01:49 This is a variable as a string.
+01:51 And so we get better intellisense or autocomplete
+01:54 let's go ahead and decorate out our response object as well.
+01:58 Okay and then this one is going to be somewhere.
+02:01 We're going to pass in the variables from the route and
+02:03 that's always going to be a string.
+02:04 It'll clean up and it looks like we're pretty much
+02:06 ready to go. We're going to do some kind of response.
+02:09 Let's just echo back the values here.
+02:11 We're going to have director and this one will have
+02:13 imdb_number and let's just tell it that's spelled
+02:16 correctly.
+02:17 Alright, we can test the other two real quick now.
+02:19 Searching for run, great.
+02:21 Now we're searching for Cameron by the director bit.
+02:25 And here we're searching by the IMDB code for api/movie.
+02:28 Perfect!
+02:29 So we have our stubs pretty much built.
+02:31 And to be honest, this is kind of it for our API.
+02:34 What's left?
+02:35 Well what we have to do is we have to implement some
+02:38 kind of data backend and some kind of searching
+02:41 mechanism to actually search for the keyword or
+02:44 the director or whatever.
+02:45 It turns out that's pretty much pre-baked.
+02:47 So we're going to do a little bit of work to fill out
+02:49 these methods and then we'll be done.

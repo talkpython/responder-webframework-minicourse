@@ -1,0 +1,14 @@
+00:00 Now of course, everything you see me type and much more
+00:02 will be available to you
+00:04 in a free and open GitHub repository, and this one, so go to
+00:08 github.com/talkpython/responder-webframework-minicourse.
+00:13 Here, you'll see all the demo code that you'll see created
+00:17 even a little bit more
+00:18 because I had to tweak a couple of things.
+00:19 We added the Vue JS, there's stuff in there
+00:21 that we're going to talk about at the end
+00:24 and everything that you need to get going
+00:26 you can get it right here.
+00:27 So be sure to go to this repository, star, and fork it
+00:31 and that way you'll be sure
+00:32 to have all the materials to follow along.

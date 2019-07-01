@@ -1,0 +1,120 @@
+00:00 Hello and welcome
+00:01 to this short mini course on
+00:03 the Responder web framework.
+00:05 Maybe you've heard of Responder
+00:07 it's written by this guy, he's done a few
+00:09 open source projects in Python
+00:10 his name's Kenneth Reitz.
+00:12 So, likely you've heard of Kenneth
+00:13 because of his Requests library
+00:16 and Kenneth is pretty well known
+00:17 for creating clean and well liked APIs.
+00:22 So, when he said hey, I know there's a bunch
+00:24 of web frameworks out there, but I'm going to
+00:26 create another one to put my stamp on
+00:28 what that API might look like
+00:30 well that got my attention.
+00:31 And probably it got your attention as well.
+00:34 So, if you want to see what this web framework
+00:37 that Kenneth Reitz came up with looks like
+00:39 and take it for a tour
+00:41 well you've come to the right place.
+00:43 Let's talk quickly about what we're going to cover.
+00:46 First, I'm going to talk about some of the key features.
+00:48 After all, with this mini course
+00:49 we're not going to be able to dive deep
+00:51 into some of the really intriguing things
+00:53 that this framework takes on, for example
+00:55 it has async run as background work
+00:58 that you can run in process.
+01:00 It has web socket support
+01:02 it has really good async methods
+01:05 that you can work with.
+01:06 And we're not going to dig deep into that
+01:08 but we will talk a little bit about it.
+01:10 We're going to go and build an async capable API
+01:14 and notice I didn't say async API
+01:15 because we're not actually going into async here
+01:18 that's well beyond the scope of this
+01:20 I have a very long course on that
+01:22 and you're welcome to take it and it's super, super powerful
+01:24 and it's one of the things that drew me
+01:25 to this framework, however we're not
+01:27 going to go into those details.
+01:29 If you know async in a way, all the view methods
+01:32 and API endpoints we create here with Responder
+01:35 you can put async def on the method
+01:37 and you can do await within it
+01:39 it's really, really great for scalability
+01:41 but again, we're not going into it.
+01:43 We're going to create two kinds of views
+01:45 or processing with this web framework.
+01:47 One is going to return templated Jinja2 based views.
+01:51 I'm going to go to the database to go to a data source
+01:53 and then I'm going to convert that into
+01:57 a dictionary, I'm going to pass that dictionary
+01:58 to a Jinja2 template, Jinja2 template's going to be
+02:01 rendered into rich HTML, that's great.
+02:04 The other kind are more HTTP API endpoints.
+02:08 Here we're going to do a get request
+02:10 or a post request over to an endpoint
+02:12 and return some kind of JSON.
+02:14 These JSON endpoints, they're fun
+02:16 and they're cool, but you know
+02:17 they just exchange little bits of data.
+02:19 Wouldn't it be fun if we had
+02:20 a really awesome app built around it?
+02:23 Why, yes it would.
+02:24 So, we're going to take an app that I built
+02:26 using Vue JS to explore this API
+02:29 and it's really fun, it's really interactive.
+02:31 Again, same reasons as async
+02:33 we're not going to go into Vue
+02:35 I'm going to show you how the app works
+02:36 I'll give you like the one minute flyer
+02:37 of Vue JS, but I will give you this
+02:40 rich application that works with this API
+02:42 that we will build during the class.
+02:45 Now, I said it a few times but I just
+02:46 wanted to remind you, this is a fast course
+02:48 we're just going to go really quickly
+02:50 into some of the key elements of Responder
+02:52 we're going to build some JSON APIs
+02:54 we're going to build some cool apps to consume it.
+02:57 Think we're going to have a lot of fun.
+02:58 So, with that in mind, let's just keep moving.
+03:00 Now, what do we expect you to know
+03:01 in order to take this class
+03:03 and get the most out of it?
+03:04 Well, Python obviously.
+03:06 We're not going to cover any of the foundations
+03:08 you don't know what a foreign loop is
+03:10 or things like that, there's other places
+03:12 you probably should start and then come back here.
+03:14 This assumes that you know like the majority
+03:16 of the core Python language.
+03:18 We're not doing meta classes and deep things
+03:20 but the basic Python syntax, you should
+03:22 definitely have that down.
+03:23 And it is a web framework, we're not going
+03:25 really deep into the foundations
+03:27 of what REST APIs are or why you care about them.
+03:30 Or what HTTP verbs are, we're going to assume
+03:33 you kind of are familiar with that
+03:34 and we want to build something in Python with Responder.
+03:37 These are the expectations for the course.
+03:39 And finally, let me introduce myself, who am I?
+03:41 Who's this guy talking to you?
+03:42 My name's Michael Kennedy
+03:43 that's a picture of me, you can find me
+03:45 on Twitter @MKennedy.
+03:47 You might know me from the Talk Python to Me podcast
+03:49 you may also know me from the Python Bytes podcast
+03:52 but most relevant for this conversation
+03:55 I'm the founder and one of the main authors
+03:57 at Talk Python Training.
+03:59 Welcome, welcome to the course.
+04:00 It's going to be a lot of fun
+04:02 and it's not going to take a lot of time
+04:03 so I think that's a beautiful mix
+04:05 and I hope you enjoy it.

@@ -1,0 +1,29 @@
+00:00 Before we open up the API of Responder
+00:03 and start writing code with it
+00:04 I want to give you a quick tour
+00:06 of what we're going to build.
+00:08 We're going to rebuild this service
+00:10 the Movie Db service from Talk Python.
+00:14 You know this is a demo type of API
+00:17 that I took and built long ago
+00:19 for another one of my courses.
+00:21 It allows you to search for movies
+00:22 so here you can see we're searching for "run"
+00:26 and we search for say "job"
+00:27 we get, you know The Italian Job and things like that.
+00:30 So, we have this nice API here that we can work with.
+00:33 We have this sort of landing page here at the front
+00:36 and you can also search by director
+00:37 or even pull up the details
+00:38 of an individual movie by IMDB code.
+00:42 So, we're going to take the data backend for this
+00:44 which is really a Python file
+00:45 and just like a simple CSV
+00:47 and we're going to recreate this in Responder.
+00:51 This one is actually running Pyramid on one of my servers
+00:54 but for our demo, we're going to take this
+00:56 and just recreate the same concept
+00:58 using the same data source with Responder.
+01:01 Should be a lot of fun
+01:02 and you can check this thing out here of course
+01:04 or just check out the after code as we go through it.

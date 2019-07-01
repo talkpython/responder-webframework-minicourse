@@ -1,0 +1,31 @@
+00:00 Now, we could use whatever editor we want
+00:02 but I am a big fan of PyCharm.
+00:04 I think PyCharm strikes a really nice balance
+00:07 of not being too heavyweight
+00:09 it's somewhat heavyweight, but it's really not that bad
+00:11 with absolutely supporting proper web applications.
+00:16 So, not only does it understand CSS and JavaScript and HTML
+00:20 it knows Python really well
+00:21 and it understands the relationships
+00:22 between your CSS files, your static files
+00:25 your Python files that you're working with.
+00:28 It has nice refactoring.
+00:29 All sorts of stuff.
+00:31 So, we're going to be using PyCharm.
+00:32 You can get the Community Edition
+00:33 which will do most of what you need here.
+00:36 It'll basically do everything except for give you
+00:39 any form of support for the Jinja2 stuff
+00:41 or the CSS editing, all right?
+00:44 You could still create those files and edit them
+00:46 I'm pretty sure
+00:47 but with the free community edition
+00:48 it won't do auto-complete within them.
+00:50 They don't have native support for Responder
+00:52 built in anyway, so that's not a huge shortcoming
+00:55 but it is something to be aware of.
+00:57 So we're going to use PyCharm Professional.
+00:58 You can follow along with that.
+01:00 Or use something else if you prefer
+01:01 but here's how you can get the same editor
+01:03 that we're using.

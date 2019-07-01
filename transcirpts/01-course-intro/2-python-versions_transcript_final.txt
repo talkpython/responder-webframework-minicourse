@@ -1,0 +1,67 @@
+00:00 Now we're almost ready to start writing some code
+00:02 and talking about this framework.
+00:03 But before we do, let's just make sure everyone's on a
+00:05 level playing field.
+00:06 There's a couple things I want to share with you.
+00:08 A couple things I want to give you.
+00:09 And, also want to make sure you have what you need
+00:12 to take this course.
+00:13 So the first thing I'm want to start with is
+00:15 what version of Python do you need.
+00:17 Well of course we're on modern Python.
+00:20 That in my mind I guess, is probably like
+00:22 Python 3.5 and above.
+00:24 But you're actually going to need Python 3.6 'cause
+00:26 I believe we use some f-strings.
+00:28 f-strings are a new way to format strings in Python
+00:30 which are great.
+00:31 Also it has async and await which came in 3.5
+00:34 but I believe some of the features that were added
+00:37 also required a little bit later.
+00:39 So let's just say, 3.6 or later, maybe even 3.7.
+00:42 Newer is better. You have to have Python installed
+00:45 and it has to be Python 3.5 at an absolute minimum.
+00:49 Ah, could be higher still. You may even wonder all
+00:52 "That's great Michael I, really want to have Python installed
+00:55 but do I on this particular machine".
+00:57 I don't know. Well you can always ask.
+00:59 You can go to your terminal in macOS or Linux
+01:02 and type python3 -V and it will tell you, one of two things.
+01:06 Either the version number or Python 3 not found.
+01:09 If Python 3 not found, that means it's either not installed
+01:12 or just not in your path.
+01:13 But, you can see I got Python 3.7.2
+01:15 that's almost the latest.
+01:17 Just the day I started pressing record here, 3.7.3 came out.
+01:22 Pretty much the same. On Windows, ah, python3 -V
+01:26 sometimes works and you can get 3.7.2.
+01:30 Depending on how you've installed Python.
+01:32 You might have to type just python, without the 3, -V
+01:35 and see what you get.
+01:37 And especially on Windows 'çause until recently
+01:39 could not target the version by the executable name.
+01:43 You have to make sure your path is just right
+01:45 so you can type "where python" on Windows I think
+01:49 and "which python" on Mac and Linux.
+01:51 If that's wrong, you can switch it.
+01:52 It's either which or where
+01:53 to show you where it's come from and if there is more
+01:55 it'll show you which, which is in the path and where
+01:57 you know which one comes first in the path and so on.
+02:00 So if you have a new enough version of Python
+02:03 super, let's rock and roll.
+02:04 If you don't, refer you over to
+02:06 realpython.com/installing-python
+02:10 These guys have a really nice set of steps on giving this OS
+02:14 here's how you get Python there
+02:15 here's the trade off's and so on.
+02:17 And, they're keeping it nice and up to date, so ah
+02:21 instead of showing you how install and maybe
+02:23 you know, six months there's some other way like
+02:25 Windows 10 now just offered Python 3.7 in the store
+02:29 which is a better way that getting it off
+02:31 python.org for example.
+02:32 So you can check out what they've got here.
+02:34 This is pretty helpful and of course, you know
+02:37 get modern Python all set up if you don't have it
+02:38 and let's roll.

@@ -1,0 +1,43 @@
+00:00 Let's get started by
+00:01 just defining the most basic web app
+00:03 that we can with responder.
+00:04 And then we're going to add some templated views
+00:06 and some API methods.
+00:08 And also, when we get started
+00:09 we're going to build it all in this jammed-together
+00:11 app.py file, and then I'll show you one way at least
+00:15 to restructure it in a much much better way
+00:17 with API views broken out, and page views
+00:21 and routes and all the stuff that
+00:22 you would probably want to do for real apps
+00:25 broken apart in a much better way.
+00:26 But we're going to start by jamming it in here.
+00:28 So, let's get started. Now, when you think of this API
+00:31 it's Flask-inspired but it's not exactly the same as Flask.
+00:35 A lot of what you do, before mirroring Flask
+00:37 we did like Flask.app like this, Flask app.
+00:42 Here, we're going to say responder.api, like so.
+00:46 We're going to create this and then on to various methods
+00:48 we can say app.route, to add a route.
+00:50 So let's say we want one for the home view
+00:53 and this will be index
+00:54 and this is going to take a request, and a response.
+00:57 This is unlike Flask, which doesn't take these.
+01:00 And then, what we can do is
+01:01 we can just say response.content = "Hello world".
+01:06 Alright, now if we run this
+01:07 it's going to be not so inspiring, it just exits.
+01:11 The last thing we've got to do is
+01:12 we've got to go down here and say app.run.
+01:14 If we do this, clean it up a little and we run it
+01:18 it's up and going, let's see what we've got.
+01:21 Hello world, there we go. Hopefully you can tell
+01:24 this is a pretty simple API
+01:26 and it's also quite Flask-inspired
+01:29 in the way that it works.
+01:31 Obviously, we want to replace this
+01:33 with some kind of templated view
+01:34 maybe an overall layout page
+01:37 and individual page details like we have in some
+01:39 of the other templated frameworks and things like that.
+01:42 We'll get to that but here is a really nice way to get started.

@@ -1,0 +1,54 @@
+00:00 Before we start building our application
+00:01 with Responder, let's talk about a couple
+00:03 of the key features.
+00:05 We're not going to be able to cover the majority of these things.
+00:07 We're going to build a pretty simple app in this short chapter.
+00:11 I want to highlight some of the other things
+00:12 that Responder does for you.
+00:14 You can go check it out.
+00:15 Well, you'll definitely see the API.
+00:17 So there's a pleasant API.
+00:18 This is from Kenneth Reitz
+00:20 and he's pretty good at putting together nice API's.
+00:23 Things like requests are considered some
+00:24 of the better API's out there.
+00:27 It has class-based views
+00:29 but you don't have to use inheritance.
+00:31 You can just use a decorator on a class, basically.
+00:34 It has a nice ASGI framework.
+00:37 So these are the Async web Service Gateway Interfaces.
+00:40 This is, we talked about this
+00:41 when we talked about the Quart framework.
+00:43 This is the essential element that allows us to use async
+00:47 and await for our web view methods
+00:50 and actually use asyncio to do more concurrency.
+00:53 And that's one of the key foundations of Responder
+00:56 is it's built on top of an ASGI
+00:58 and natively and first-class supports async web view methods.
+01:04 That because of that it's pretty easy for it to support WebSocket.
+01:07 It also has the ability to take any other ASGI or WSGI app
+01:11 and make that a sub part of the application.
+01:14 So imagine there's some Flask app
+01:17 and you want to make that part of your sub application.
+01:20 Or you want to take a Pyramid app
+01:21 and make that part of some CMS section, or who knows.
+01:25 You can mount these other apps as sub routes
+01:28 and sort of combine them together. That's pretty cool.
+01:30 It has nice, simple f-string-like ways to declare routes.
+01:34 So you don't have to do regular expressions
+01:36 and stuff like that.
+01:37 It has a mutable response object that's passed to each view.
+01:40 So you don't have to return anything.
+01:42 You just set some properties
+01:43 and then it just picks those up as it goes.
+01:46 One interesting feature is it has support for background tasks.
+01:49 So instead of running those as part of the request
+01:52 you can actually just register stuff
+01:54 to run in the background
+01:55 and that's actually internally done
+01:56 with a ThreadPoolExecutor.
+01:58 Also has support for GraphQL, OpenAPI schema generation
+02:01 and documentation, and even special support
+02:04 for single page web apps or SPA's.
+02:06 That's quite a few cool features
+02:08 so it's a really neat framework.

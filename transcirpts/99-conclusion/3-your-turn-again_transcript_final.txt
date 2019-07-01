@@ -1,0 +1,17 @@
+00:00 Remember at the beginning when I told you
+00:01 there are two ways to follow along?
+00:03 Well, you've gone through level one
+00:05 you've watched all the videos
+00:06 and maybe you followed along
+00:08 and built out that movie service as we did.
+00:11 Well it's time to keep building and follow along.
+00:13 Now it's your turn!
+00:15 So visit the URL at the bottom or just go to the GitHub repo
+00:18 and go to Your Turn.
+00:19 You'll see a bunch of steps on how you can explore
+00:21 create your own service using some Mockaroo fake data
+00:25 and build something uniquely yours
+00:28 and I'm sure you'll have a lot of fun.
+00:29 So don't forget the step
+00:30 to go and do a Your Turn and explore
+00:33 the steps are right there.

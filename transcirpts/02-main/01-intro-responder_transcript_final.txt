@@ -1,0 +1,19 @@
+00:00 Hello and welcome to Day 50.
+00:02 We're going to spend this one day chapter on Responder
+00:07 a new async web framework created by Kenneth Reitz.
+00:11 Maybe you've heard of Responder, but very likely not.
+00:13 It's quite, quite new.
+00:15 It's a great async-capable web framework.
+00:19 Why are we only spending one day on this
+00:21 and not diving deep into it?
+00:23 Well, it's really quite new and I'm not sure
+00:26 if it's going to survive
+00:27 or if it's going to gain all the traction
+00:28 so right now we're just throwin' it out there
+00:30 as another topic that you can cover.
+00:33 Something that you can use. I really like the API even just building small apps with it
+00:37 it's made me smile.
+00:38 It seems like there's some
+00:39 really great stuff happenin' here.
+00:41 So we're going to build a quick, simple API and website
+00:46 within Responder and I think that'll make you smile as well.

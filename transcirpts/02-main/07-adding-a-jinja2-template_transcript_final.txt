@@ -1,0 +1,65 @@
+00:00 Here's our target application.
+00:02 It's going to look like this.
+00:03 Now what I want to do is have a template that we can use.
+00:07 A standard, dynamic HTML template.
+00:09 Now this one I told you was Pyramid
+00:11 and so it's using Chameleon
+00:12 but Responder, as far as I know
+00:15 doesn't support Chameleon it supports Jinja2.
+00:17 So what I'm going to do is I'm going to put
+00:19 the HTML already here and we're just going to look at it.
+00:21 Because it's not really that interesting
+00:23 and we're just trying to recreate the same thing.
+00:25 So we're going to create a templates folder
+00:26 and let's go ahead and actually mark that
+00:29 as a template directory.
+00:31 Here in the _layout.html we have
+00:33 the overall look and feel for our site.
+00:35 And it's going to be the same across everything.
+00:37 And importantly notice right here we have our content block
+00:41 and then over here we're just saying this
+00:43 extends /shared/_layout.html
+00:48 and here's that content block
+00:50 And this parts pretty static honestly
+00:52 but you could imagine putting
+00:54 additional Jinja commands and so on.
+00:56 Gives you enough to work with.
+00:57 So these are in place now how do we use this?
+00:59 Obviously that's not going to work.
+01:01 I'm going to say the app and actually
+01:02 I kind of want to rename this.
+01:03 Let's rename this to api.
+01:06 There we go since it's an instance of the api.
+01:08 So we'll say api.template
+01:11 and we can give it the name of the template.
+01:13 And this is going to be relative to the working
+01:16 to the template folder here
+01:18 So we're going to say it like this. We'll say home/index.html, okay.
+01:22 And then this should get that content
+01:24 and any data we wanted to pass.
+01:26 We could pass user equals Micheal or whatever you want.
+01:30 Alright you can do keyword values.
+01:32 I'll expand the dictionary there.
+01:33 And it'll be passed to the Jinja template.
+01:35 Alright let's run this and see what we get now.
+01:37 Well it kind of looks good. It looks okay.
+01:40 If we compare these though
+01:41 notice there's some formatting that's missing.
+01:44 Alright, for example, this is not so good
+01:47 it's suppose to be the right. What's happening?
+01:49 Well the static files over here
+01:51 if we go and inspect element and look at the network
+01:54 we'll look at all of it.
+01:56 You can see we're getting 500 errors
+01:58 trying to get access to these static files that don't exist.
+02:01 These really should be 404s
+02:02 I've actually submitted an error report
+02:05 like a Github issue, to the project saying
+02:07 those should be 404s but whatever it is
+02:09 the point here is that these are not working.
+02:12 We got to now add a static route
+02:14 so that's what we're going to do next.
+02:15 But we're already pretty close right?
+02:17 We've got the template up and running.
+02:20 All we got to do is say api.template
+02:21 and give it a relative path within the templates folder.

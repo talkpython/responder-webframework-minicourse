@@ -1,0 +1,17 @@
+00:00 We covered quite a bit actually in this course,
+00:01 We talked about Responder,
+00:04 a bunch of stuff with HTTP endpoints.
+00:06 We talked about Mockeroo, and we even did
+00:07 a little bit of Vue JS.
+00:09 But, it is nothing compared to what we cover
+00:11 in the 100 Days of Web in Python course.
+00:14 This represents only 1/100th of what we're covering.
+00:18 Eh, you throw in the Vue JS, maybe 1.5%
+00:22 of what is covered in the 100 Days of Web course.
+00:24 So, if you want to go deeper, definitely
+00:26 be on the look-out for when we release this course,
+00:29 and maybe check out training.talkpython.fm to see
+00:32 if it's already released if you're watching this
+00:34 a little bit later after we've recorded this.
+00:36 It's a super fun course and if you like these kind of things,
+00:39 you should definitely check out the full course.
