@@ -32,8 +32,8 @@
 01:05 using a cool library called Axios.
 01:07 All that stuff's included, I've committed all the stuff
 01:10 under node modules so you don't have to
-01:11 like, MPM initialize it or install the local stuff
-01:15 all right, you just check it out and run it.
+01:11 NPM initialize it to install the local stuff.
+01:15 All right, you just check it out and run it.
 01:17 So, anyway, this stuff here, is going to be bound
 01:20 over on this end, because we're saying, "Here's an ID."
 01:26 And here's like a search input
