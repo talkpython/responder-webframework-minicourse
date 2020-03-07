@@ -9,7 +9,7 @@ response_count_max = 10
 @api.route("/api/search/{keyword}")
 def search_keyword(req, resp, keyword: str):
     movies = db.search_keyword(keyword)
-    print("Searching for {}, {} results".format(keyword, len(movies)))
+    print(f"Searching for {keyword}, {len(movies)} results")
 
     limited = len(movies) > response_count_max
     if limited:
@@ -26,7 +26,7 @@ def search_keyword(req, resp, keyword: str):
 @api.route("/api/director/{director_name}")
 def search_director(_, resp, director_name: str):
     movies = db.search_director(director_name)
-    print("Searching for director {}, {} results".format(director_name, len(movies)))
+    print(f"Searching for director {director_name}, {len(movies)} results")
 
     limited = len(movies) > response_count_max
     if limited:
@@ -43,7 +43,7 @@ def search_director(_, resp, director_name: str):
 @api.route("/api/movie/genre/{genre}")
 def movies_by_genre(_, resp: Response, genre: str):
     hits = db.movies_by_genre(genre)
-    print("Searching for movies by genre {}, {} results".format(genre, len(hits)))
+    print(f"Searching for movies by genre {genre}, {len(hits)} results")
 
     limited = len(hits) > response_count_max
     if limited:
@@ -60,7 +60,7 @@ def movies_by_genre(_, resp: Response, genre: str):
 @api.route("/api/movie/{imdb_number}")
 def search_imdb(_, resp, imdb_number: str):
     movie = db.find_by_imdb(imdb_number)
-    print("Looking up movie by code: {}, found? {}".format(imdb_number, 'Yes' if movie else 'NO'))
+    print(f"Looking up movie by code: {imdb_number}, found? {'Yes' if movie else 'NO'}")
 
     resp.media = db.movie_to_dict(movie)
 
@@ -78,7 +78,7 @@ def top_movies(_, resp: Response):
         for m in hits
     ]
 
-    keyword = "top_{}".format(response_count_max)
+    keyword = f"top_{response_count_max}"
 
     resp.media = {'keyword': keyword, 'hits': hits_dicts, 'truncated_results': limited}
 
