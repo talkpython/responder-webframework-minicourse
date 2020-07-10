@@ -11,7 +11,25 @@ Your goal will be to create a REST API built upon fake, static in-memory data to
 
 You can see the types of data you can generate by clicking the folder icon in the type column. Browse through there and choose some sort of fake data and generate 1,000 rows and download it as JSON.
 
-Then create a Python virtual environment, activate it, `pip3 install responder`, and create an `app.py` file.
+Then create a Python virtual environment, activate it:
+
+```bash
+# On macOS
+
+$ python3 -m venv venv
+$ . venv/bin/activate
+(venv) $
+```
+
+```bash
+# On Windows, ensure python maps to python.exe from Python 3
+
+c:\> python -m venv venv
+c:\> venv/scripts/activate
+(venv) c:\> 
+```
+
+Then install Responder, `pip3 install responder`, and create an `app.py` file.
 
 Add two API endpoints, one for a list of items in your data set (or to search it) and another to return a single item.
 
